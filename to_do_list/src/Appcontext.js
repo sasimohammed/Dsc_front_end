@@ -4,6 +4,12 @@ import React, { createContext, useContext, useReducer } from 'react';
 const initialState = {
     currentPage: 'tasks',
     xp:200,
+
+    tasks: [
+        { id: 1, text: 'Morning workout', completed: false },
+        { id: 2, text: 'Read 10 pages', completed: false },
+        { id: 3, text: 'Finish project', completed: false },
+    ],
 };
 
 function reducer(state, action) {
@@ -12,6 +18,8 @@ function reducer(state, action) {
             return { ...state, currentPage: action.payload };
         case 'ADD_XP':
             return { ...state, xp: state.xp + action.payload };
+        case 'SET_TASKS':
+            return { ...state, tasks: action.payload };
         default:
             return state;
     }
