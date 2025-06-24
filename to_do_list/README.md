@@ -13,7 +13,7 @@
 
 
   
-**Live Demo:** [View on Netlify](https://gamingtodo.netlify.app/)
+**Live Demo:** [View on Netlify](https://hilarious-sunburst-c45ddc.netlify.app/)
 
 ## ✨ Features
 
