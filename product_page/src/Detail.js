@@ -30,7 +30,7 @@ function Detail() {
 
     const handleAddToCart = () => {
         alert(`${product.title} added to cart!`);
-        // Or you can use console.log
+
         console.log('Added to cart:', product);
     };
 
